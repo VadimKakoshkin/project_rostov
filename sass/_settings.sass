@@ -9,10 +9,27 @@ img
     max-width: 100%
 .section
     padding: 60px 0
+    &__text
+        font-family: 'Futura Book', sans-serif
+        color: $light
     &-title
         text-align: center
-        text-transform: uppercase
-        font-family: 'Yeseva One', cursive
+        &--left
+            text-align: left
+        &--light
+            color: $light
+        &__heading
+            text-align: center
+            text-transform: uppercase
+            font-family: 'Yeseva One', cursive
+            &--primary
+                color: $primary
+        &__word
+            display: flex
+            align-items: center
+            &::after
+                content: ''
+                width: 90px
         &__image
             display: flex
             justify-content: center
@@ -23,4 +40,6 @@ img
                 height: 2px
                 background-color: $primary
                 margin: 0 10px
+    &--dark
+        background-color: $dark
                 
